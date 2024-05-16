@@ -56,7 +56,7 @@ What's the dimensionality of this matrix (number of columns)?
 * 2
 * 155
 * 345
-* 515 *this one*
+* 515 ***this one***
 * 715
 
 
@@ -70,7 +70,7 @@ Now let's use the feature matrix from the previous step to train a model.
 What's the RMSE on train?
 
 * 3.64
-* 7.64 *this one*
+* 7.64 ***this one***
 * 11.64
 * 16.64
 
@@ -83,7 +83,7 @@ What's the RMSE on validation?
 
 * 3.81
 * 7.81
-* 11.81 *this one* (Nearest as it was 11.873335620590654)
+* 11.81 ***this one*** (Nearest as it was 11.873335620590654)
 * 16.81
 
 ## Submit the results
