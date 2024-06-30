@@ -45,3 +45,12 @@ aws --endpoint-url=http://localhost:4566 \
  kinesis create-stream \
  --stream-name ride_predictions \  
  --shard-count 1
+
+## without makefiles
+
+```bash
+isort .
+black .
+pylint --recursive=y .
+pytest tests/
+```
