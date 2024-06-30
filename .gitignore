@@ -161,8 +161,6 @@ cython_debug/
 
 #ignore coursework folder
 
-course_work/
-
 #ignore csv and parquet files
 *.csv
 *.parquet
