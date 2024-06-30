@@ -1,11 +1,9 @@
-import os
-import json
 import base64
+import json
+import os
+
 import boto3
-
-
 import mlflow
-
 
 # kinesis_client = boto3.client("kinesis")
 

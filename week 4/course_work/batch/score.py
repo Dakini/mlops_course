@@ -2,16 +2,16 @@
 # coding: utf-8
 
 
-import pickle
 import os
+import pickle
 import sys
-import pandas as pd
-
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
-import mlflow
 import uuid
+
+import mlflow
+import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.metrics import mean_squared_error
 
 
 def read_dataframe(filename: str):

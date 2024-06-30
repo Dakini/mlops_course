@@ -1,7 +1,7 @@
 # pylint: disable=duplicate-code
 import json
-import requests
 
+import requests
 from deepdiff import DeepDiff
 
 with open("event.json", "rt", encoding="utf-8") as f_in:

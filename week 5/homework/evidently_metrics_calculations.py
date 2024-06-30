@@ -1,23 +1,18 @@
 import datetime
-import time
-import random
+import io
 import logging
+import random
+import time
 import uuid
-import pytz
 
 import pandas as pd
-import io
 import psycopg
-
-from evidently.report import Report
+import pytz
 from evidently import ColumnMapping
-from evidently.metrics import (
-    ColumnDriftMetric,
-    DatasetDriftMetric,
-    DatasetMissingValuesMetric,
-    DataQualityStabilityMetric,
-    ColumnQuantileMetric,
-)
+from evidently.metrics import (ColumnDriftMetric, ColumnQuantileMetric,
+                               DataQualityStabilityMetric, DatasetDriftMetric,
+                               DatasetMissingValuesMetric)
+from evidently.report import Report
 from joblib import load
 
 logging.basicConfig(

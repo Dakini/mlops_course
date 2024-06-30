@@ -1,14 +1,13 @@
 import datetime
-import time
-import random
+import io
 import logging
+import random
+import time
 import uuid
-import pytz
 
 import pandas
-import io
-
 import psycopg
+import pytz
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s"

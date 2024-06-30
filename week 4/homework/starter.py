@@ -2,13 +2,14 @@
 # coding: utf-8
 
 
-import pickle
-import pandas as pd
 import argparse
 import logging
-import boto3
-from botocore.exceptions import ClientError
 import os
+import pickle
+
+import boto3
+import pandas as pd
+from botocore.exceptions import ClientError
 
 
 def load_model():

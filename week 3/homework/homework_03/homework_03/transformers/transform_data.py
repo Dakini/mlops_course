@@ -4,6 +4,8 @@ if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
 import pandas as pd
+
+
 @transformer
 def transform(data, *args, **kwargs):
     print(data.head())

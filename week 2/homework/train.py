@@ -1,10 +1,10 @@
 import os
 import pickle
-import click
 
+import click
+import mlflow
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
-import mlflow
 
 
 def load_pickle(filename: str):

@@ -1,6 +1,6 @@
 import pickle
-import mlflow
 
+import mlflow
 from flask import Flask, jsonify, request
 
 RUN_ID = "a1397aaac61141a9a77920a9e42ce066"

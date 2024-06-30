@@ -1,7 +1,7 @@
-import os
 import json
-import boto3
+import os
 
+import boto3
 
 PREDICTIONS_STREAM_NAME = os.getenv("PREDICTIONS_STREAM_NAME")
 RUN_ID = os.getenv("RUN_ID")

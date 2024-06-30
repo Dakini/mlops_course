@@ -1,8 +1,8 @@
 import os
 import pickle
+
 import click
 import mlflow
-
 from mlflow.entities import ViewType
 from mlflow.tracking import MlflowClient
 from sklearn.ensemble import RandomForestRegressor
