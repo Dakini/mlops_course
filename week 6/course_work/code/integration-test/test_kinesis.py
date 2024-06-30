@@ -1,7 +1,7 @@
 # pylint: disable=duplicate-code
 
-import json
 import os
+import json
 from pprint import pprint
 
 import boto3
