@@ -61,7 +61,7 @@ def main(year, month):
     y_pred = lr.predict(X_val)
 
     print("predicted mean duration:", y_pred.mean())
-    print("predicted sum duration:", y_pred.sum() / 60 / 60)
+    print("predicted sum duration:", y_pred.sum())
 
     df_result = pd.DataFrame()
     df_result["ride_id"] = df["ride_id"]
@@ -77,6 +77,8 @@ def main(year, month):
             index=False,
             storage_options=options,
         )
+
+        df.to_parquet("test.parquet", engine="pyarrow", compression=None, index=False)
     # df_result.to_parquet(
     #     output_file,
     #     engine="pyarrow",
