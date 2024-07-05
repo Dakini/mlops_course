@@ -164,7 +164,7 @@ cython_debug/
 #ignore csv and parquet files
 *.civ
 *.parquet
-*.pkl 
+
 
 
 # Local .terraform directories
