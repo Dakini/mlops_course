@@ -63,5 +63,4 @@ jobs:
         id: plan
         working-directory: "week 6/course_work/code/infrastructure"
         run: |
-          ls 
-          # terraform init -backend-config="key=mlops-zoomcamp-prod.tfstate" --reconfigure && terraform plan --var-file vars/prod.tfvars
+          terraform init -backend-config="key=mlops-zoomcamp-prod.tfstate" --reconfigure && terraform plan --var-file vars/prod.tfvars
