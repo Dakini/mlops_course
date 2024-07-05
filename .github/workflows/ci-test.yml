@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Unit tests
         working-directory: "week 6/course_work/code/"
-        run: pipenv run pytests tests/
+        run: pipenv run pytest tests/
 
       - name: Lint
         working-directory: "week 6/course_work/code/"
