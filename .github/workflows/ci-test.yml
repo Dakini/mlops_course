@@ -23,15 +23,15 @@ jobs:
           python-version: 3.9
 
       - name: Install Dependencies
-        working-directory: "week 6/course_work/code"
+        working-directory: "week 6/course_work/code/"
         run: pip install pipenv && pipenv install --dev
 
       - name: Run Unit tests
-        working-directory: "week 6/course_work/code"
+        working-directory: "week 6/course_work/code/"
         run: pipenv run pytests tests/
 
       - name: Lint
-        working-directory: "week 6/course_work/code"
+        working-directory: "week 6/course_work/code/"
         run: pipenv run pylint --recursively=y .
 
       - name: Configure AWS Crednetials
@@ -63,4 +63,5 @@ jobs:
         id: plan
         working-directory: "week 6/course_work/code/infrastructure"
         run: |
-          terraform init -backend-config="key=mlops-zoomcamp-prod.tfstate" --reconfigure && terraform plan --var-file vars/prod.tfvars
+          ls 
+          # terraform init -backend-config="key=mlops-zoomcamp-prod.tfstate" --reconfigure && terraform plan --var-file vars/prod.tfvars
